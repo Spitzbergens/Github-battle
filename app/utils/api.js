@@ -58,20 +58,23 @@ function getUserData(player) {
         var repos = data[1];
 
         return {
-            profile: profile,
+            profile: profiel,
             score: calculateScore(profile, repos)
         }
 
     })
 }
 
-function sortPlayers(players) {
+function sortPlayer(players) {
 
     return players.sort((a, b) => {
         return b.score - a.score;
     })
 
 }
+
+
+
 
 module.exports = {
 
